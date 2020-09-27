@@ -7,6 +7,7 @@ import { chartOne, chartTwo, chartThree } from '../../utils/ajax-calls/fetch-cha
 
 import { TOKEN } from '../../utils/globals/globals'
 
+import { setLoader } from '../../redux/loader/loader.action'
 
 import { connect } from 'react-redux'
 
@@ -36,6 +37,7 @@ class ChartSection extends Component {
             let second_chart = chartTwo(this.props.communcation.startDate, this.props.communcation.endDate, TOKEN)
             let third_chart = chartThree(this.props.communcation.startDate, this.props.communcation.endDate, TOKEN)
 
+            this.props.setLoader(true);
 
             Promise
                 .allSettled([first_chart, second_chart, third_chart])
@@ -64,6 +66,8 @@ class ChartSection extends Component {
                             chart_array: response_three.result.data
                         }
                     })
+
+                    this.props.setLoader(false)
                 }).catch(rejection => {
                     console.log('request is aborted');
                 })
@@ -85,7 +89,7 @@ class ChartSection extends Component {
                 <BarChart
                     chart_array={this.state.chartTwo.chart_array}
                     title="AppSite Analytics"
-                    x_title="AppSite_ID"
+                    x_title="AppSite ID"
                     y_title="Impressions_Offered"
                     caption="AppSite Analytics"
                 ></BarChart>
@@ -103,4 +107,9 @@ const mapStateToProps = (state) => {
     return state
 }
 
-export default connect(mapStateToProps)(ChartSection);
+const mapDispatchToProps = dispatch => {
+    return {
+        setLoader: (loader) => dispatch(setLoader(loader))
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ChartSection);

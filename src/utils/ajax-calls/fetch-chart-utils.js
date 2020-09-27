@@ -1,6 +1,9 @@
-export const abortController = new AbortController();
+
 
 export function chartOne(start_date, end_date, token) {
+    const abortController = new AbortController();
+    const { signal } = abortController;
+
     return fetch(`https://sigviewauth.sigmoid.io/api/v1/getData`, {
         method: "POST",
 
@@ -55,12 +58,15 @@ export function chartOne(start_date, end_date, token) {
             "Content-Type": "application/json"
         },
 
-        signal: abortController.signal
+        signal: signal
 
     }).then(response => response.json())
 }
 
 export function chartTwo(start_date, end_date, token) {
+    const abortController = new AbortController();
+    const { signal } = abortController;
+
     return fetch(`https://sigviewauth.sigmoid.io/api/v1/getData`, {
         method: "POST",
 
@@ -115,11 +121,14 @@ export function chartTwo(start_date, end_date, token) {
             "Content-Type": "application/json"
         },
 
-        signal: abortController.signal
+        signal: signal
     }).then(response => response.json());
 }
 
 export function chartThree(start_date, end_date, token) {
+    const abortController = new AbortController();
+    const { signal } = abortController;
+
     return fetch(`https://sigview.sigmoid.io/api/v1/getData`, {
         method: "POST",
 
@@ -179,6 +188,6 @@ export function chartThree(start_date, end_date, token) {
             "Content-Type": "application/json"
         },
 
-        signal: abortController.signal
+        signal: signal
     }).then(response => response.json());
 }

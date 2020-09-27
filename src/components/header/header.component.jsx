@@ -15,9 +15,8 @@ import { connect } from 'react-redux'
 
 import { setDateRange } from '../../redux/communication/communication.action'
 
-import { abortController } from "../../utils/ajax-calls/fetch-chart-utils"
+import Loader from 'react-loader-spinner'
 
-console.log('moment is ', moment().valueOf())
 class Header extends React.Component {
     constructor(props) {
         super();
@@ -26,11 +25,8 @@ class Header extends React.Component {
             pickerRange: {
                 startDate: "0",
                 endDate: "0"
-            },
-            dateRange: {
-                startDate: '0',
-                endDate: '0'
             }
+            
         };
 
         
@@ -98,14 +94,13 @@ class Header extends React.Component {
         this.props.dateRange(picker.startDate.valueOf(), picker.endDate.valueOf())
     }
 
-    /**
-     * @function abortRequeset - kills the triggered request
-     */
-    abortRequest() {
-        abortController.abort();
+    refresh() {
+        window.location.reload();
     }
+    
 
     render() {
+        debugger;
         let minDate = this.formatDate(this.state.pickerRange.startDate);
         let maxDate = this.formatDate(this.state.pickerRange.endDate);
         
@@ -124,12 +119,18 @@ class Header extends React.Component {
                     className="justify-content-end"
                     onApply={this.handlerForApply.bind(this)}
                     >
-                        <input type="text" className="form-control" style={{"width": "20%"}}/>
+                        <input type="text" className="form-control" style={{"width": "250px"}}/>
                     </DateRangePicker> :
                     null
                 }
 
-                <Button variant="primary" onClick={this.abortRequest.bind(this)}>Refresh</Button>
+                {
+                    this.props.loader.loader ?
+                    <Loader type="Puff" color="#00BFFF" height={30} width={30} />:
+                    null
+                }
+
+                <Button variant="primary" onClick={ this.refresh }>Refresh</Button>
             </Navbar>
         )
     }
@@ -141,10 +142,9 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-const mapStateToProps = (startDate, endDate) => {
+const mapStateToProps = (state) => {
     return {
-        startDate: startDate,
-        endDate: endDate
+        ...state
     }
 }
 
