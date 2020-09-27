@@ -2,7 +2,7 @@
   "name": "sigmoid-analytics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shubhamkumarpanday.github.io/sigmoid-analytics",
+  "homepage": "https://shubhamkumarpanday.github.io/sigmoid-anlaytics",
   "dependencies": {
     "@devexpress/dx-react-core": "^2.7.1",
     "@devexpress/dx-react-grid": "^2.7.1",
