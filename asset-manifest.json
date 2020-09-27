@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sigmoid-analytics/static/css/main.5f361e03.chunk.css",
+    "main.js": "/sigmoid-analytics/static/js/main.9aefe85f.chunk.js",
+    "main.js.map": "/sigmoid-analytics/static/js/main.9aefe85f.chunk.js.map",
+    "runtime-main.js": "/sigmoid-analytics/static/js/runtime-main.a6cb6a1f.js",
+    "runtime-main.js.map": "/sigmoid-analytics/static/js/runtime-main.a6cb6a1f.js.map",
+    "static/css/2.7b6b3a04.chunk.css": "/sigmoid-analytics/static/css/2.7b6b3a04.chunk.css",
+    "static/js/2.ac9030f4.chunk.js": "/sigmoid-analytics/static/js/2.ac9030f4.chunk.js",
+    "static/js/2.ac9030f4.chunk.js.map": "/sigmoid-analytics/static/js/2.ac9030f4.chunk.js.map",
+    "index.html": "/sigmoid-analytics/index.html",
+    "precache-manifest.0ee7db736d548efc569b67646d4107fc.js": "/sigmoid-analytics/precache-manifest.0ee7db736d548efc569b67646d4107fc.js",
+    "service-worker.js": "/sigmoid-analytics/service-worker.js",
+    "static/css/2.7b6b3a04.chunk.css.map": "/sigmoid-analytics/static/css/2.7b6b3a04.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/sigmoid-analytics/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ac9030f4.chunk.js.LICENSE.txt": "/sigmoid-analytics/static/js/2.ac9030f4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6cb6a1f.js",
+    "static/css/2.7b6b3a04.chunk.css",
+    "static/js/2.ac9030f4.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.9aefe85f.chunk.js"
+  ]
+}
