@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db80372c82247dffe7cdf93b14e24243",
+    "revision": "e6521b1373bf48e67b0497697a7f960a",
     "url": "/sigmoid-anlaytics/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sigmoid-anlaytics/static/css/2.581912ab.chunk.css"
   },
   {
-    "revision": "5c4485dfc3bdda1abc03",
+    "revision": "58fc2666f910eba0ef07",
     "url": "/sigmoid-anlaytics/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sigmoid-anlaytics/static/js/2.30cc24b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c4485dfc3bdda1abc03",
-    "url": "/sigmoid-anlaytics/static/js/main.e7144d45.chunk.js"
+    "revision": "58fc2666f910eba0ef07",
+    "url": "/sigmoid-anlaytics/static/js/main.ffc7f6f7.chunk.js"
   },
   {
     "revision": "a7711ebffe0e7e26dc0e",

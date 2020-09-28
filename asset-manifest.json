@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sigmoid-anlaytics/static/css/main.5f361e03.chunk.css",
-    "main.js": "/sigmoid-anlaytics/static/js/main.e7144d45.chunk.js",
-    "main.js.map": "/sigmoid-anlaytics/static/js/main.e7144d45.chunk.js.map",
+    "main.js": "/sigmoid-anlaytics/static/js/main.ffc7f6f7.chunk.js",
+    "main.js.map": "/sigmoid-anlaytics/static/js/main.ffc7f6f7.chunk.js.map",
     "runtime-main.js": "/sigmoid-anlaytics/static/js/runtime-main.310a1d0c.js",
     "runtime-main.js.map": "/sigmoid-anlaytics/static/js/runtime-main.310a1d0c.js.map",
     "static/css/2.581912ab.chunk.css": "/sigmoid-anlaytics/static/css/2.581912ab.chunk.css",
     "static/js/2.30cc24b1.chunk.js": "/sigmoid-anlaytics/static/js/2.30cc24b1.chunk.js",
     "static/js/2.30cc24b1.chunk.js.map": "/sigmoid-anlaytics/static/js/2.30cc24b1.chunk.js.map",
     "index.html": "/sigmoid-anlaytics/index.html",
-    "precache-manifest.3c0b05af468054c848b8231a815cdce9.js": "/sigmoid-anlaytics/precache-manifest.3c0b05af468054c848b8231a815cdce9.js",
+    "precache-manifest.5ba65029c4f86b0583c9c2f5c0dad445.js": "/sigmoid-anlaytics/precache-manifest.5ba65029c4f86b0583c9c2f5c0dad445.js",
     "service-worker.js": "/sigmoid-anlaytics/service-worker.js",
     "static/css/2.581912ab.chunk.css.map": "/sigmoid-anlaytics/static/css/2.581912ab.chunk.css.map",
     "static/css/main.5f361e03.chunk.css.map": "/sigmoid-anlaytics/static/css/main.5f361e03.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.581912ab.chunk.css",
     "static/js/2.30cc24b1.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.e7144d45.chunk.js"
+    "static/js/main.ffc7f6f7.chunk.js"
   ]
 }
