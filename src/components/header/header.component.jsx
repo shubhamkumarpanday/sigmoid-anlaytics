@@ -33,7 +33,6 @@ class Header extends React.Component {
     }
 
     componentDidMount = () => {
-        console.log('componentDidMount is called');
 
         fetch(`https://sigviewauth.sigmoid.io/api/v1/getDateRange`, {
             method: "POST",
@@ -113,6 +112,8 @@ class Header extends React.Component {
                 {
                     this.state.pickerRange.endDate !== "0"?
                     <DateRangePicker initialSettings={{
+                        startDate: minDate,
+                        endDate: maxDate,
                         minDate: minDate,
                         maxDate: maxDate
                     }} 

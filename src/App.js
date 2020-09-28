@@ -6,8 +6,6 @@ import ChartSection from './components/charts/chart.component'
 
 import './App.css';
 
-
-
 class App extends Component {
     constructor(props) {
       super();
