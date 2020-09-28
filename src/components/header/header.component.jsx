@@ -1,7 +1,7 @@
 import moment from 'moment'
 import React from 'react'
 
-import { Navbar, Button } from 'react-bootstrap'
+import { Navbar, Button, Spinner } from 'react-bootstrap'
 import DateRangePicker from 'react-bootstrap-daterangepicker'
 // you will need the css that comes with bootstrap@3. if you are using
 // a tool like webpack, you can do the following:
@@ -15,7 +15,7 @@ import { connect } from 'react-redux'
 
 import { setDateRange } from '../../redux/communication/communication.action'
 
-import Loader from 'react-loader-spinner'
+
 
 class Header extends React.Component {
     constructor(props) {
@@ -126,7 +126,7 @@ class Header extends React.Component {
 
                 {
                     this.props.loader.loader ?
-                    <Loader type="Puff" color="#00BFFF" height={30} width={30} />:
+                    <Spinner animation="border" variant="primary" />:
                     null
                 }
 
