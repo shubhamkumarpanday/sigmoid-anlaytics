@@ -7,20 +7,12 @@ import ChartSection from './components/charts/chart.component'
 import './App.css';
 
 class App extends Component {
-    constructor(props) {
-      super();
-
-      this.state = {
-        startDate: "",
-        endDate: ""
-      }
-    }
 
     render() {
       return (
         <div className="App">
           <Header></Header>
-          <ChartSection startDate={ this.state.startDate } endDate={ this.state.endDate }></ChartSection>
+          <ChartSection />
         </div>
       );
     }
