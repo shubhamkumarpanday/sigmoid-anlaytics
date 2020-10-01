@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sigmoid-anlaytics/precache-manifest.d1432f496d6da4c705e6bd55cd390cbd.js"
+  "/sigmoid-anlaytics/precache-manifest.25ec05db2a1a9753d0b4a7246c98f7e1.js"
 );
 
 self.addEventListener('message', (event) => {
